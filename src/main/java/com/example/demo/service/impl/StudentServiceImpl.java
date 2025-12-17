@@ -7,7 +7,7 @@ import com.example.demo.service.Student;
 @service
 public class StudentServiceImpl implements StudentService{
     @Autowired
-    StudentRepository stdrepo
+    StudentRepository stdrepo;
     @Override
     public Student poststudent(Student st){
         return stdrepo.save(st);
