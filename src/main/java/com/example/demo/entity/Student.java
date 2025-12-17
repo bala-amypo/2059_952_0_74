@@ -5,8 +5,8 @@ import java.time.LocalDate;
 import jakarta.persistence.*;
 @Entity
 public class Student{
-    @id
-    @GenerateValue(strategy=GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String dept;
