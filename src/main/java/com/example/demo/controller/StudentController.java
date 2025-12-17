@@ -8,6 +8,6 @@ public class StudentController{
     @Autowired
      @PostMapping("/addStudent")
      public Student addStudent(@RequestBody Student st){
-           return 
+           return stdser.
      }
 }
