@@ -9,7 +9,7 @@ public class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
     @Override
-    public Student poststudent(Student st){
+    Student poststudent(Student st){
         return stdrepo.save(st);
     }
 }
