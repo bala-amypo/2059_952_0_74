@@ -13,7 +13,7 @@ public class Student{
     private String name;
     private String dept;
     private float cgpa;
-    @Future Or Present(message="the should be in present or future")
+    @FutureOrPresent(message="the should be in present or future")
     private LocalDate dob;
     public Long getId() {
         return id;
