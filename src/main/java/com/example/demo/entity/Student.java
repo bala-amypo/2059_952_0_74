@@ -9,6 +9,7 @@ public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message="")
     private String name;
     private String dept;
     private float cgpa;
