@@ -9,10 +9,11 @@ public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    @NotBlank(message="")
+    @NotBlank(message="message should be in correct format")
     private String name;
     private String dept;
     private float cgpa;
+    @Future Or Present(message="the should be in present or future")
     private LocalDate dob;
     public Long getId() {
         return id;
